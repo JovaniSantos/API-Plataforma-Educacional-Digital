@@ -1,0 +1,390 @@
+name: 'Eventos de Calendário'
+description: 'API para gerenciamento de eventos de calendário'
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: api/v1/admin/calendar-events
+    metadata:
+      groupName: 'Eventos de Calendário'
+      groupDescription: 'API para gerenciamento de eventos de calendário'
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/v1/admin/calendar-events
+    metadata:
+      groupName: 'Eventos de Calendário'
+      groupDescription: 'API para gerenciamento de eventos de calendário'
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      title:
+        name: title
+        description: 'Título do evento'
+        required: true
+        example: consequatur
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      description:
+        name: description
+        description: Descrição
+        required: false
+        example: 'Dolores dolorum amet iste laborum eius est dolor.'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        custom: []
+      start_time:
+        name: start_time
+        description: 'Data e hora de início'
+        required: true
+        example: consequatur
+        type: datetime
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      end_time:
+        name: end_time
+        description: 'Data e hora de término'
+        required: false
+        example: consequatur
+        type: datetime
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        custom: []
+      class_id:
+        name: class_id
+        description: 'ID da turma'
+        required: false
+        example: 17
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        custom: []
+      subject_id:
+        name: subject_id
+        description: 'ID da disciplina'
+        required: false
+        example: 17
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        custom: []
+      created_by:
+        name: created_by
+        description: 'ID do usuário que criou'
+        required: true
+        example: 17
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      event_type:
+        name: event_type
+        description: 'Tipo de evento (exam/meeting/holiday/other)'
+        required: false
+        example: consequatur
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        custom: []
+      status:
+        name: status
+        description: 'Status (active/cancelled)'
+        required: false
+        example: consequatur
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        custom: []
+    cleanBodyParameters:
+      title: consequatur
+      description: 'Dolores dolorum amet iste laborum eius est dolor.'
+      start_time: consequatur
+      end_time: consequatur
+      class_id: 17
+      subject_id: 17
+      created_by: 17
+      event_type: consequatur
+      status: consequatur
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/v1/admin/calendar-events/{id}'
+    metadata:
+      groupName: 'Eventos de Calendário'
+      groupDescription: 'API para gerenciamento de eventos de calendário'
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the calendar event.'
+        required: true
+        example: consequatur
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      id: consequatur
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/v1/admin/calendar-events/{id}'
+    metadata:
+      groupName: 'Eventos de Calendário'
+      groupDescription: 'API para gerenciamento de eventos de calendário'
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the calendar event.'
+        required: true
+        example: consequatur
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      id: consequatur
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      title:
+        name: title
+        description: 'Título do evento'
+        required: false
+        example: consequatur
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      description:
+        name: description
+        description: Descrição
+        required: false
+        example: 'Dolores dolorum amet iste laborum eius est dolor.'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        custom: []
+      start_time:
+        name: start_time
+        description: 'Data e hora de início'
+        required: false
+        example: consequatur
+        type: datetime
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      end_time:
+        name: end_time
+        description: 'Data e hora de término'
+        required: false
+        example: consequatur
+        type: datetime
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        custom: []
+      class_id:
+        name: class_id
+        description: 'ID da turma'
+        required: false
+        example: 17
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        custom: []
+      subject_id:
+        name: subject_id
+        description: 'ID da disciplina'
+        required: false
+        example: 17
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        custom: []
+      created_by:
+        name: created_by
+        description: 'ID do usuário que criou'
+        required: false
+        example: 17
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      event_type:
+        name: event_type
+        description: 'Tipo de evento (exam/meeting/holiday/other)'
+        required: false
+        example: consequatur
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        custom: []
+      status:
+        name: status
+        description: 'Status (active/cancelled)'
+        required: false
+        example: consequatur
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        custom: []
+    cleanBodyParameters:
+      title: consequatur
+      description: 'Dolores dolorum amet iste laborum eius est dolor.'
+      start_time: consequatur
+      end_time: consequatur
+      class_id: 17
+      subject_id: 17
+      created_by: 17
+      event_type: consequatur
+      status: consequatur
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/v1/admin/calendar-events/{id}'
+    metadata:
+      groupName: 'Eventos de Calendário'
+      groupDescription: 'API para gerenciamento de eventos de calendário'
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the calendar event.'
+        required: true
+        example: consequatur
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      id: consequatur
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []

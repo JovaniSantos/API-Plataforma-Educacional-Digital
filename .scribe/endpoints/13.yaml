@@ -1,0 +1,346 @@
+name: 'Questões de Atividades'
+description: 'API para gerenciamento de questões de atividades'
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: api/v1/teacher/activity-questions
+    metadata:
+      groupName: 'Questões de Atividades'
+      groupDescription: 'API para gerenciamento de questões de atividades'
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/v1/teacher/activity-questions
+    metadata:
+      groupName: 'Questões de Atividades'
+      groupDescription: 'API para gerenciamento de questões de atividades'
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      activity_id:
+        name: activity_id
+        description: 'ID da atividade'
+        required: true
+        example: 17
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      question_text:
+        name: question_text
+        description: 'Texto da questão'
+        required: true
+        example: consequatur
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      question_type:
+        name: question_type
+        description: 'Tipo da questão (multiple_choice/true_false/short_answer/essay)'
+        required: true
+        example: consequatur
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      points:
+        name: points
+        description: Pontos
+        required: true
+        example: 11613.31890586
+        type: number
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      order_number:
+        name: order_number
+        description: 'Número de ordem'
+        required: true
+        example: 17
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      options:
+        name: options
+        description: 'Opções (para múltipla escolha)'
+        required: false
+        example: consequatur
+        type: json
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        custom: []
+      correct_answer:
+        name: correct_answer
+        description: 'Resposta correta'
+        required: false
+        example: consequatur
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        custom: []
+    cleanBodyParameters:
+      activity_id: 17
+      question_text: consequatur
+      question_type: consequatur
+      points: 11613.31890586
+      order_number: 17
+      options: consequatur
+      correct_answer: consequatur
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/v1/teacher/activity-questions/{id}'
+    metadata:
+      groupName: 'Questões de Atividades'
+      groupDescription: 'API para gerenciamento de questões de atividades'
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the activity question.'
+        required: true
+        example: consequatur
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      id: consequatur
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/v1/teacher/activity-questions/{id}'
+    metadata:
+      groupName: 'Questões de Atividades'
+      groupDescription: 'API para gerenciamento de questões de atividades'
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the activity question.'
+        required: true
+        example: consequatur
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      id: consequatur
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      activity_id:
+        name: activity_id
+        description: 'ID da atividade'
+        required: false
+        example: 17
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      question_text:
+        name: question_text
+        description: 'Texto da questão'
+        required: false
+        example: consequatur
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      question_type:
+        name: question_type
+        description: 'Tipo da questão (multiple_choice/true_false/short_answer/essay)'
+        required: false
+        example: consequatur
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      points:
+        name: points
+        description: Pontos
+        required: false
+        example: 11613.31890586
+        type: number
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      order_number:
+        name: order_number
+        description: 'Número de ordem'
+        required: false
+        example: 17
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      options:
+        name: options
+        description: 'Opções (para múltipla escolha)'
+        required: false
+        example: consequatur
+        type: json
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        custom: []
+      correct_answer:
+        name: correct_answer
+        description: 'Resposta correta'
+        required: false
+        example: consequatur
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        custom: []
+    cleanBodyParameters:
+      activity_id: 17
+      question_text: consequatur
+      question_type: consequatur
+      points: 11613.31890586
+      order_number: 17
+      options: consequatur
+      correct_answer: consequatur
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/v1/teacher/activity-questions/{id}'
+    metadata:
+      groupName: 'Questões de Atividades'
+      groupDescription: 'API para gerenciamento de questões de atividades'
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the activity question.'
+        required: true
+        example: consequatur
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      id: consequatur
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
