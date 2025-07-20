@@ -102,4 +102,9 @@ Route::prefix('v1')->group(function () {
         Route::post('notifications/mark-all-read', [NotificationController::class, 'markAllRead'])->name('notifications.mark-all-read');
         Route::get('messages/conversation/{userId}', [MessageController::class, 'conversation'])->name('messages.conversation');
     });
+
+
+    Route::get('/teste-api', function () {
+        return view('welcome');
+    });
 });
